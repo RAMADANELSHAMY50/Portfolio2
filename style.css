@@ -1,4 +1,5 @@
 @layer base {
+
   html,
   body {
     margin: 0;
@@ -10,15 +11,69 @@
     overscroll-behavior: none;
   }
 
-  main > :first-child {
+  main {
+    overflow-x: clip;
+    /* يقص الدوائر المتوهجة من غير ما يكسر السكرول */
+  }
+
+  main> :first-child {
     margin-top: 0 !important;
   }
 
-  main > :last-child {
+  main> :last-child {
     margin-bottom: 0 !important;
   }
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* ===== Responsive ===== */
+
+/* العنوان ما يختفيش تحت الهيدر الثابت عند الضغط على لينك */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* سطر الرابط + الـ badge في آخر كروت المشاريع */
+#projects .pt-0 {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .px-margin-desktop {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .px-margin-desktop {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .text-display {
+    font-size: 2.25rem !important;
+    line-height: 2.75rem !important;
+  }
+
+  .text-headline-lg {
+    font-size: 1.75rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  .text-headline-md {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .text-body-lg {
+    font-size: 1rem !important;
+    line-height: 1.625rem !important;
+  }
 }
