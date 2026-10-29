@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>Ramadan Elshamy | Front-End Developer</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+  class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <header
+    class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+    <div class="h-16 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <img alt="RE Developer Monogram" class="h-8 w-auto object-contain" src="image/IMG_1155.JPG" />
+        <a class="flex flex-col" data-path="portfolio" href="#">
+          <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Ramadan
+            Elshamy</span>
+          <span class="font-label-sm text-label-sm text-outline tracking-wider uppercase mt-space-xs">Frontend
+            Engineer</span>
+        </a>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-space-xs"
+        data-active-classes="bg-surface-container-high text-primary font-label-md rounded">
+        <a aria-current="page"
+          class="px-space-md py-space-sm transition-colors bg-surface-container-high text-primary font-label-md rounded"
+          data-path="portfolio" href="#">Home</a>
+        <a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          data-path="about" href="#about">About</a>
+        <a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          data-path="skills" href="#skills">Skills</a>
+        <a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          data-path="projects" href="#projects">Projects</a>
+        <a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          data-path="training" href="#training">Training</a>
+        <a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          data-path="contact" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-space-md">
+        <div
+          class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded">
+          <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          <span class="font-label-sm text-label-sm text-tertiary-fixed">Open to Work (Junior / Remote)</span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <a aria-label="GitHub Profile"
+            class="w-9 h-9 flex items-center justify-center rounded bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+            href="https://github.com/RAMADANELSHAMY50" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+
+          <a aria-label="LinkedIn Profile"
+            class="w-9 h-9 flex items-center justify-center rounded bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+            href="https://www.linkedin.com/in/ramadan-elshamy-1b4ab5336/" rel="noopener noreferrer" target="_blank">
+            <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+        <button aria-label="Toggle Navigation Menu"
+          class="lg:hidden w-9 h-9 flex items-center justify-center rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          type="button"><span class="material-symbols-outlined text-[20px]">menu</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 bg-surface">
+    <div class="flex flex-col w-full text-on-surface">
+
+      <!-- HERO -->
+      <section
+        class="relative w-full max-w-7xl mx-auto px-margin-desktop py-space-xl flex flex-col justify-center min-h-[calc(100vh-4rem)]"
+        id="hero">
+        <div
+          class="absolute -top-12 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div
+          class="absolute bottom-10 right-10 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div
+              class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-full w-fit">
+              <span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+              <span
+                class="font-label-sm text-label-sm text-tertiary-fixed tracking-wider uppercase font-semibold">AVAILABLE
+                FOR HIRE • JUNIOR FRONT-END DEVELOPER</span>
+            </div>
+            <h1 class="font-display text-display text-on-surface tracking-tight leading-tight">
+              Hi, I'm <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-primary to-secondary">Ramadan
+                Elshamy</span>
+            </h1>
+            <p class="font-headline-md text-headline-md text-primary-fixed-dim">Junior Front-End Developer</p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              I build responsive, user-friendly web applications using React and modern front-end technologies.
+              Information Technology graduate specializing in Software Development from Egypt.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold rounded hover:bg-primary transition-colors shadow-md"
+                href="#projects"><span>View My Projects</span><span
+                  class="material-symbols-outlined text-[18px]">arrow_downward</span></a>
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-surface-container text-on-surface font-body-md text-body-md font-semibold rounded hover:bg-surface-container-high transition-colors"
+                href="#contact"><span>Contact Me</span><span
+                  class="material-symbols-outlined text-[18px]">mail</span></a>
+            </div>
+            <div class="flex items-center gap-space-md pt-space-sm">
+              <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Connect:</span>
+              <a class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+                href="https://github.com/RAMADANELSHAMY50" rel="noopener noreferrer" target="_blank"><span
+                  class="material-symbols-outlined text-[16px]">code</span><span>GitHub</span></a>
+              <a class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"
+                href="https://www.linkedin.com/in/ramadan-elshamy-1b4ab5336/" rel="noopener noreferrer"
+                target="_blank"><span
+                  class="material-symbols-outlined text-[16px]">share</span><span>LinkedIn</span></a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 w-full">
+            <div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl">
+              <div class="h-9 px-space-md bg-surface-container-lowest flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-3 h-3 rounded-full bg-error inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#f59e0b] inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
+                </div>
+                <span class="font-label-sm text-label-sm text-outline">RamadanPortfolio.jsx</span>
+                <span class="material-symbols-outlined text-outline text-[16px]">terminal</span>
+              </div>
+              <div
+                class="p-space-md bg-surface-container-lowest/90 overflow-x-auto font-code-block text-code-block text-on-surface leading-relaxed">
+                <div class="flex gap-space-md font-mono">
+                  <div class="flex flex-col text-outline select-none text-right pr-space-xs">
+                    <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span><span>11</span>
+                  </div>
+                  <div class="flex flex-col text-on-surface">
+                    <div><span class="text-secondary">import</span> React <span class="text-secondary">from</span> <span
+                        class="text-tertiary">'react'</span>;</div>
+                    <div><span class="text-secondary">import</span> { Engineer } <span
+                        class="text-secondary">from</span> <span class="text-tertiary">'@dev/profile'</span>;</div>
+                    <div class="text-outline">// System initialization</div>
+                    <div><span class="text-primary-container">const</span> Developer = () =&gt; (</div>
+                    <div class="pl-space-md">&lt;<span class="text-primary">RamadanPortfolio</span></div>
+                    <div class="pl-space-lg">status=<span class="text-tertiary">"ready_to_hire"</span></div>
+                    <div class="pl-space-lg">role=<span class="text-tertiary">"Junior Front-End Developer"</span></div>
+                    <div class="pl-space-lg">tech={[<span class="text-tertiary">'React'</span>, <span
+                        class="text-tertiary">'Vite'</span>, <span class="text-tertiary">'Tailwind'</span>, <span
+                        class="text-tertiary">'JavaScript'</span>]}</div>
+                    <div class="pl-space-lg">focus=<span class="text-tertiary">"Clean Architecture &amp; High UX"</span>
+                    </div>
+                    <div class="pl-space-md">/&gt;</div>
+                    <div>);</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="px-space-md py-space-xs bg-surface-container-high flex items-center justify-between font-label-sm text-label-sm text-outline">
+                <div class="flex items-center gap-space-xs"><span
+                    class="w-2 h-2 rounded-full bg-tertiary"></span><span>Compiled Successfully (ESNext)</span></div>
+                <span>UTF-8 • React 18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="w-full bg-surface-container-low py-space-xl" id="about">
+        <div class="max-w-7xl mx-auto px-margin-desktop flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Background
+              &amp; Technical Journey</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">About Me</h2>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+            <div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container p-space-lg rounded-xl">
+              <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                I'm an Information Technology graduate specializing in Software Development, passionate about building
+                responsive and user-friendly web applications. I work with React, JavaScript, HTML, CSS, and modern UI
+                frameworks. I'm continuously improving my skills through practical projects and training.
+              </p>
+              <div class="pt-space-xs flex flex-wrap gap-space-xs">
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-primary-fixed-dim rounded font-label-sm text-label-sm">Software
+                  Development Specialist</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-tertiary rounded font-label-sm text-label-sm">Modern
+                  Component Patterns</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-secondary rounded font-label-sm text-label-sm">Performance
+                  Mindset</span>
+              </div>
+            </div>
+            <div class="lg:col-span-5 grid grid-cols-1 gap-space-sm">
+              <div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[22px]">school</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Education</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">B.Sc. in Information
+                    Technology</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Specialization in Software Development
+                  </p>
+                </div>
+              </div>
+              <div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[22px]">devices</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Core Focus</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Responsive Web Engineering
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Component Architecture &amp; Interactive
+                    State Management</p>
+                </div>
+              </div>
+              <div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[22px]">public</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Location &amp;
+                    Availability</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Egypt</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Available for Remote Worldwide &amp;
+                    Freelance Opportunities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="w-full py-space-xl" id="skills">
+        <div class="max-w-7xl mx-auto px-margin-desktop flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Engineered
+              Toolset</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Technical Skills</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-sm pb-space-xs">
+                <div
+                  class="w-8 h-8 rounded bg-primary-container/20 text-primary-container flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[20px]">code_blocks</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend Development</h3>
+              </div>
+              <div class="flex flex-wrap gap-space-xs">
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary"></span>HTML5</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary"></span>CSS3</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary"></span>JavaScript (ES6+)</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-primary-fixed font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>React.js</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary"></span>Responsive Web Design</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary"></span>DOM Manipulation</span>
+              </div>
+            </div>
+            <div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-sm pb-space-xs">
+                <div class="w-8 h-8 rounded bg-secondary-container/30 text-secondary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[20px]">palette</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">CSS Frameworks</h3>
+              </div>
+              <div class="flex flex-wrap gap-space-xs">
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-primary font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Tailwind CSS</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-secondary font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Bootstrap</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Utility-First Styling</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Mobile First Layouts</span>
+              </div>
+            </div>
+            <div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-sm pb-space-xs">
+                <div class="w-8 h-8 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[20px]">build</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Tools &amp; Integration</h3>
+              </div>
+              <div class="flex flex-wrap gap-space-xs">
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Git</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>GitHub</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>REST APIs</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Axios</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Strapi CMS</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>VS Code</span>
+                <span
+                  class="px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs"><span
+                    class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>npm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="w-full bg-surface-container-low py-space-xl" id="projects">
+        <div class="max-w-7xl mx-auto px-margin-desktop flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Shipped
+              Works</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Featured Projects</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Real-world applications built with React and
+              modern tools</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+            <!-- Project 1 -->
+            <div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-full h-52 bg-surface-container-lowest overflow-hidden flex items-center justify-center relative">
+                  <img alt="AutoParts Management System Dashboard preview showing inventory table and metrics"
+                    class="w-full h-full object-cover" src="image/APEX Auto and Interview Systems Showcase.png" />
+                  <div
+                    class="absolute top-space-xs right-space-xs px-space-xs py-1 bg-surface-container-lowest/80 backdrop-blur rounded font-label-sm text-label-sm text-primary-fixed">
+                    Full-Stack Architecture</div>
+                </div>
+                <div class="p-space-lg flex flex-col gap-space-sm">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">E-Commerce • Admin
+                    &amp; Storefront</span>
+                  <h3 class="font-headline-md text-headline-md text-on-surface">AutoParts Management System</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">A comprehensive web-based
+                    automotive parts management system featuring admin and customer interfaces, product and category
+                    management, authentication, interactive shopping cart, checkout flow, and order management.</p>
+                  <div class="flex flex-wrap gap-space-xs pt-space-xs">
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">React</span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">Vite</span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">Tailwind
+                      CSS</span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">JavaScript</span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-primary rounded">Strapi
+                      CMS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-lg pt-0 flex items-center justify-between">
+                <a class="inline-flex items-center gap-space-xs text-primary font-label-md text-label-md hover:text-primary-fixed transition-colors"
+                  href="https://github.com/RAMADANELSHAMY50/AutoParts_Management-System_Frontend"
+                  rel="noopener noreferrer" target="_blank"><span
+                    class="material-symbols-outlined text-[18px]">terminal</span><span>Source Repository</span></a>
+                <span
+                  class="font-label-sm text-label-sm text-outline bg-surface-container-high px-space-sm py-1 rounded">Internal
+                  API / Config Required</span>
+              </div>
+            </div>
+
+            <!-- Project 2: To Do List -->
+            <div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between">
+              <div>
+                <!-- Project Preview -->
+                <div
+                  class="w-full h-52 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md">
+
+                  <div class="w-full max-w-xs bg-slate-950 text-white p-3 rounded-xl shadow-lg border border-slate-800">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between mb-3">
+                      <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-indigo-400">task_alt</span>
+                        <span class="font-semibold text-sm">To Do List</span>
+                      </div>
+                      <span class="material-symbols-outlined text-indigo-300 text-sm">dark_mode</span>
+                    </div>
+
+                    <!-- Add Task -->
+                    <div class="flex items-center gap-2 mb-3">
+                      <div
+                        class="flex-1 bg-slate-900 border border-slate-700 rounded-md px-2 py-2 text-slate-400 text-xs">
+                        Add a new task...
+                      </div>
+                      <span class="bg-indigo-600 rounded-md px-2 py-1 text-white text-sm">+</span>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="flex gap-2 text-[10px] mb-3">
+                      <span class="bg-indigo-600 rounded-full px-3 py-1">All Tasks</span>
+                      <span class="bg-slate-800 rounded-full px-3 py-1 text-slate-300">Pending</span>
+                      <span class="bg-slate-800 rounded-full px-3 py-1 text-slate-300">Completed</span>
+                    </div>
+
+                    <!-- Task Items -->
+                    <div class="flex flex-col gap-2 text-xs">
+                      <div class="flex items-center gap-2 bg-slate-900 rounded-md p-2">
+                        <span class="material-symbols-outlined text-indigo-400 text-base">check_box_outline_blank</span>
+                        <span class="flex-1">Finish portfolio project</span>
+                        <span class="bg-rose-900/60 text-rose-300 rounded-full px-2 py-1 text-[9px]">High</span>
+                      </div>
+
+                      <div class="flex items-center gap-2 bg-slate-900 rounded-md p-2">
+                        <span class="material-symbols-outlined text-indigo-400 text-base">check_box</span>
+                        <span class="flex-1 line-through text-slate-500">Learn JavaScript</span>
+                        <span class="text-emerald-400 text-[10px]">Done</span>
+                      </div>
+
+                      <div class="flex items-center gap-2 bg-slate-900 rounded-md p-2">
+                        <span class="material-symbols-outlined text-indigo-400 text-base">check_box_outline_blank</span>
+                        <span class="flex-1">Build a personal website</span>
+                        <span class="bg-amber-900/60 text-amber-300 rounded-full px-2 py-1 text-[9px]">Medium</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Information -->
+                <div class="p-space-lg flex flex-col gap-space-sm">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">
+                    Productivity Application
+                  </span>
+
+                  <h3 class="font-headline-md text-headline-md text-on-surface">
+                    To Do List App
+                  </h3>
+
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    A responsive task management application built with HTML, CSS, and
+                    JavaScript. Organize daily tasks, mark tasks as completed, filter tasks,
+                    and manage your productivity with a clean user interface.
+                  </p>
+
+                  <!-- Technologies -->
+                  <div class="flex flex-wrap gap-space-xs pt-space-xs">
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      HTML5
+                    </span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      CSS3
+                    </span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      JavaScript (ES6+)
+                    </span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      DOM Manipulation
+                    </span>
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      Responsive Design
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Links -->
+              <div class="p-space-lg pt-0 flex items-center justify-between gap-2">
+                <a class="inline-flex items-center gap-space-xs text-primary font-label-md text-label-md hover:text-primary-fixed transition-colors"
+                  href="https://github.com/RAMADANELSHAMY50" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[18px]">terminal</span>
+                  <span>View on GitHub</span>
+                </a>
+
+                <span class="font-label-sm text-label-sm text-outline">
+                  Productivity Tool
+                </span>
+              </div>
+            </div>
+
+            <!-- Project 3: Greenly Plants -->
+            <div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between">
+              <div>
+                <!-- Project Preview -->
+                <div
+                  class="w-full h-52 bg-surface-container-lowest overflow-hidden flex items-center justify-center relative">
+                  <img class="w-full h-full object-cover" alt="Greenly Plants website preview"
+                    src="image/Greenly Plants UI Showcase.png" />
+
+                  <div
+                    class="absolute top-space-xs right-space-xs px-space-xs py-1 bg-surface-container-lowest/80 backdrop-blur rounded font-label-sm text-label-sm text-primary">
+                    Landing Page
+                  </div>
+                </div>
+
+                <!-- Project Information -->
+                <div class="p-space-lg flex flex-col gap-space-sm">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">
+                    Web Design
+                  </span>
+
+                  <h3 class="font-headline-md text-headline-md text-on-surface">
+                    Greenly Plants Website
+                  </h3>
+
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    A modern and responsive plant shop landing page built with HTML and CSS.
+                    It features a clean layout, beautiful plant imagery, product sections,
+                    plant categories, and a soft green color palette for a natural shopping experience.
+                  </p>
+
+                  <!-- Technologies -->
+                  <div class="flex flex-wrap gap-space-xs pt-space-xs">
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      HTML5
+                    </span>
+
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      CSS3
+                    </span>
+
+                    <span
+                      class="px-space-xs py-1 bg-surface-container-high font-label-sm text-label-sm text-outline rounded">
+                      Responsive Design
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Links -->
+              <div class="p-space-lg pt-0 flex items-center justify-between">
+                <a class="inline-flex items-center gap-space-xs text-primary font-label-md text-label-md hover:text-primary-fixed transition-colors"
+                  href="https://github.com/RAMADANELSHAMY50/landing-plants" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[18px]">terminal</span>
+                  <span>Source Repository</span>
+                </a>
+
+                <span class="font-label-sm text-label-sm text-outline">
+                  HTML & CSS
+                </span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAINING -->
+      <section class="w-full py-space-xl" id="training">
+        <div class="max-w-7xl mx-auto px-margin-desktop flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Structured
+              Education</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Training &amp; Workshops</h2>
+          </div>
+          <div class="flex flex-col gap-space-md relative">
+            <div
+              class="bg-surface-container p-space-lg rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+              <div class="flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">verified</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-primary font-semibold">EraaSoft</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Web Development Training</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mt-1">In-depth training covering
+                    modern web development, front-end architecture, and practical engineering principles.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs shrink-0 font-label-sm text-label-sm text-outline"><span
+                  class="material-symbols-outlined text-[16px]">domain</span><span>Comprehensive Track</span></div>
+            </div>
+            <div
+              class="bg-surface-container p-space-lg rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+              <div class="flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">laptop_chromebook</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-secondary font-semibold">Digitera</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Front-End Training Program</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mt-1">Hands-on training focused
+                    on client-side web application development and responsive user interfaces.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs shrink-0 font-label-sm text-label-sm text-outline"><span
+                  class="material-symbols-outlined text-[16px]">terminal</span><span>Client Applications</span></div>
+            </div>
+            <div
+              class="bg-surface-container p-space-lg rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+              <div class="flex items-start gap-space-md">
+                <div
+                  class="w-10 h-10 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">hub</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-tertiary font-semibold">IEEE</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Front-End Development Workshop</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mt-1">Intensive workshop on
+                    modern front-end technologies, developer best practices, and team workflows.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-space-xs shrink-0 font-label-sm text-label-sm text-outline"><span
+                  class="material-symbols-outlined text-[16px]">groups</span><span>Technical Workshop</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="w-full bg-surface-container-low py-space-xl" id="contact">
+        <div class="max-w-7xl mx-auto px-margin-desktop flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Direct
+              Communication</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Contact Me</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Looking for a motivated junior front-end
+              developer? Let's get in touch.</p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <a class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-md hover:bg-surface-container-high transition-colors"
+                href="https://mail.google.com/mail/?view=cm&to=elshamyramadan203@gmail.com" target="_blank"
+                rel="noopener noreferrer">
+                <div
+                  class="w-10 h-10 rounded bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">mail</span>
+                </div>
+                <div class="flex flex-col min-w-0">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Email Address</span>
+                  <span
+                    class="font-body-md text-body-md text-on-surface font-medium truncate">elshamyramadan203@gmail.com</span>
+                </div>
+              </a>
+              <a class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-md hover:bg-surface-container-high transition-colors"
+                href="https://www.linkedin.com/in/ramadan-elshamy-1b4ab5336/" rel="noopener noreferrer" target="_blank">
+                <div
+                  class="w-10 h-10 rounded bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">share</span>
+                </div>
+                <div class="flex flex-col min-w-0">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">LinkedIn
+                    Profile</span>
+                  <span
+                    class="font-body-md text-body-md text-on-surface font-medium truncate">linkedin.com/in/ramadan-elshamy</span>
+                </div>
+              </a>
+              <a class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-md hover:bg-surface-container-high transition-colors"
+                href="https://github.com/RAMADANELSHAMY50" rel="noopener noreferrer" target="_blank">
+                <div
+                  class="w-10 h-10 rounded bg-surface-container-high text-on-surface flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">code</span>
+                </div>
+                <div class="flex flex-col min-w-0">
+                  <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">GitHub
+                    Repositories</span>
+                  <span
+                    class="font-body-md text-body-md text-on-surface font-medium truncate">github.com/RAMADANELSHAMY50</span>
+                </div>
+              </a>
+              <div class="p-space-md bg-surface-container rounded-xl flex items-center gap-space-sm">
+                <span class="material-symbols-outlined text-tertiary text-[20px]">schedule</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Timezone: UTC+2 (Egypt Standard Time)
+                  • Rapid response within 24h</span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-surface-container p-space-lg rounded-xl">
+
+              <form action="https://formspree.io/f/mvzalnqz" method="POST" class="flex flex-col gap-space-md"
+                id="portfolio-contact-form">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div class="flex flex-col gap-space-xs">
+                    <label class="font-label-sm text-label-sm text-outline" for="name">Full Name</label>
+                    <input
+                      class="w-full px-space-sm py-2 bg-surface-container-lowest text-on-surface rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container"
+                      id="name" name="name" placeholder="John Doe" required type="text" />
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <label class="font-label-sm text-label-sm text-outline" for="email">Email Address</label>
+                    <input
+                      class="w-full px-space-sm py-2 bg-surface-container-lowest text-on-surface rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container"
+                      id="email" name="email" placeholder="name@company.com" required type="email" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-sm text-label-sm text-outline" for="subject">Subject</label>
+                  <input
+                    class="w-full px-space-sm py-2 bg-surface-container-lowest text-on-surface rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container"
+                    id="subject" name="subject" placeholder="Project Opportunity / Front-End Role" required
+                    type="text" />
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-sm text-label-sm text-outline" for="message">Message</label>
+                  <textarea
+                    class="w-full px-space-sm py-2 bg-surface-container-lowest text-on-surface rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container resize-none"
+                    id="message" name="message"
+                    placeholder="Hello Ramadan, I saw your portfolio and would like to discuss..." required
+                    rows="4"></textarea>
+                </div>
+                <div class="hidden px-space-sm py-2 rounded font-label-sm text-label-sm" id="form-feedback"
+                  role="status" aria-live="polite">
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold rounded hover:bg-primary transition-colors cursor-pointer w-full sm:w-auto"
+                  id="submit-btn" type="submit">
+                  <span>Send Message</span><span class="material-symbols-outlined text-[18px]">send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="w-full bg-surface-container-lowest mt-space-xl">
+    <div class="max-w-7xl mx-auto px-margin-desktop py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-6 flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-sm text-headline-sm text-on-surface">Ramadan Elshamy</span>
+            <span
+              class="px-space-xs py-[2px] bg-surface-container text-primary-fixed-dim font-label-sm text-label-sm rounded">React
+              Developer</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Building responsive, performant, and
+            user-friendly web interfaces using React and modern frontend standards with an eye for accessibility and UI
+            engineering rigor.</p>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Index</span>
+          <nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold">
+            <a aria-current="page" class="transition-colors text-primary font-bold" data-path="portfolio"
+              href="#">Overview</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="skills" href="#skills">Tech Stack &amp; Tooling</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="projects" href="#projects">Shipped Projects</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="training" href="#training">Certifications &amp; Training</a>
+          </nav>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">External Nodes</span>
+          <div class="flex flex-col gap-space-xs">
+            <a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+              href="https://github.com/RAMADANELSHAMY50" rel="noopener noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[16px]">terminal</span>GitHub Repositories</a>
+            <a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+              href="https://www.linkedin.com/in/ramadan-elshamy-1b4ab5336/" rel="noopener noreferrer"
+              target="_blank"><span class="material-symbols-outlined text-[16px]">link</span>LinkedIn Network</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="mt-space-xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+        <p class="font-label-sm text-label-sm text-outline">© 2025 Ramadan Elshamy. All rights reserved.</p>
+        <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline"><span
+            class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>System operational · Next-gen Web
+            Architecture</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
